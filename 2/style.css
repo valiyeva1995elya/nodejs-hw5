@@ -1,0 +1,51 @@
+.block {
+    width: 250px;
+    padding: 30px;
+    box-shadow: 1px 1px 7px gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    background-color: rgb(231, 228, 228);
+    border-radius: 10px;
+}
+ol {
+    font-size: 25px;
+    color: rgb(99, 97, 97);
+}
+
+input {
+    width: 100px;
+    border-radius: 5px;
+    background-color: rgb(240, 235, 235);
+    margin-top: 10px;
+}
+
+#new_car_model{
+    width: 137px;
+    margin-right: 10px;
+}
+button {
+    background-color: black;
+    color: rgb(231, 228, 228);
+    border-radius: 5px;
+    height: 21px;
+    margin-top: 10px;
+}
+.block_added{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+h1{
+    font-size: 40px;
+    color: rgb(82, 79, 79);
+    margin: 0;
+}
+a {
+    text-decoration: none;
+    color: rgb(177, 175, 175);
+    margin-left: 170px;
+    margin-top: 20px;
+}
