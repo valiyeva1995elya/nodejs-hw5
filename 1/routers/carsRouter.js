@@ -25,18 +25,13 @@ router.delete("/:id", (req, res) => {
 router.put("/", (req, res) => {
     let carsArray = JSON.parse(fs.readFileSync("./routers/cars.json", { encoding: "utf-8" }));
     let { id, model } = req.body;
-    let e = carsArray.map(item => {
-        if (item.id === id) {
-        `
-            "id": ${id},
-            "model": "${model}`
-        }else {
-            item
-        }})
-        console.log(e)
-    fs.writeFileSync("./routers/cars.json", JSON.stringify(e))
+    let indCar = carsArray.findIndex(item => item.id === +id);
+    carsArray[indCar].model = model;
+    fs.writeFileSync("./routers/cars.json", JSON.stringify(carsArray))
     res.status(201).send("Ok")
 });
+
+
 
 
 module.exports = router;
